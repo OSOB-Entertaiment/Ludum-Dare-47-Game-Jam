@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraPosition : MonoBehaviour
 {
     public GameObject player;
-    void Update()
+    void LateUpdate()
     {
         this.transform.LookAt(player.transform);
     }
